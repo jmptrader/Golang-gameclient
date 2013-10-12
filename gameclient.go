@@ -22,6 +22,8 @@ func main() {
 			case in := <- client.incoming:
 				fmt.Println("INCOMING:")
 				fmt.Println(in)
+				maze = MazeFromJSON(in)
+				maze.Print()
 			}
 		}
 	} (client)

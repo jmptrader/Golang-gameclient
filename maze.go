@@ -64,7 +64,7 @@ func (maze *Maze) Print() {
 				}
 			}
 			if !printed {
-				fmt.Printf("- ")
+				fmt.Printf("[-] ")
 			}
 			
 		}
